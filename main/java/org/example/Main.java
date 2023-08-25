@@ -20,7 +20,7 @@ public class Main {
 
         //要件2 任意のプログラムで例外を起こしてみる。
         try {
-            System.out.print(nameLists.get(5));
+            System.out.println(nameLists.get(5));
         } catch (IndexOutOfBoundsException e) {
             System.out.print("範囲外");
         }
