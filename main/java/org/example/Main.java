@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        //課題1 String型のListかMapを作成して、その内容をコンソール画面に表示してみよう。
+        //要件1 String型のListかMapを作成して、その内容をコンソール画面に表示してみよう。
         //     Listに入れる内容は何でもOKだが、複数入れること。
         List<String> nameLists = new ArrayList<String>();
-        //課題2 Listに入れる内容は何でもOKだが、複数入れること。
+        //要件2 Listに入れる内容は何でもOKだが、複数入れること。
         nameLists.add("佐藤");
         nameLists.add("益田");
         nameLists.add("田中");
@@ -18,7 +18,7 @@ public class Main {
             System.out.print(nameLists.get(i) + "\n");
         }
 
-        //課題2 任意のプログラムで例外を起こしてみる。
+        //要件2 任意のプログラムで例外を起こしてみる。
         try {
             System.out.print(nameLists.get(5));
         } catch (IndexOutOfBoundsException e) {
