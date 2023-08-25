@@ -7,20 +7,20 @@ public class Main {
     public static void main(String[] args) {
         //要件1 String型のListかMapを作成して、その内容をコンソール画面に表示してみよう。
         //     Listに入れる内容は何でもOKだが、複数入れること。
-        List<String> nameLists = new ArrayList<String>();
+        List<String> nameList = new ArrayList<>();
         //要件2 Listに入れる内容は何でもOKだが、複数入れること。
-        nameLists.add("佐藤");
-        nameLists.add("益田");
-        nameLists.add("田中");
-        nameLists.add("小川");
-        nameLists.add("斉藤");
-        for (int i = 0; i < nameLists.size(); i++) {
-            System.out.print(nameLists.get(i) + "\n");
+        nameList.add("佐藤");
+        nameList.add("益田");
+        nameList.add("田中");
+        nameList.add("小川");
+        nameList.add("斉藤");
+        for (String name : nameList) {
+            System.out.println(name);
         }
 
         //要件2 任意のプログラムで例外を起こしてみる。
         try {
-            System.out.println(nameLists.get(5));
+            System.out.println(nameList.get(5));
         } catch (IndexOutOfBoundsException e) {
             System.out.print("範囲外");
         }
